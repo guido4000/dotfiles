@@ -1,3 +1,4 @@
 export PATH="$HOME/Dropbox/dev:$PATH"
 export PATH="$PATH:~/.rvm/bin:$PATH"
 export PATH="$PATH:~/code/git-friendly:$PATH"
+export PATH="$PATH:~/.rvm/bin:$PATH"
