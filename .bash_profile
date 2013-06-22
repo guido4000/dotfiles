@@ -1,6 +1,8 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
 
+
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -10,7 +12,9 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
+# needed to fix z.sh code! GH
 . ~/code/z/z.sh
+
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
