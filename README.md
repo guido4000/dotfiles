@@ -1,4 +1,4 @@
-# Mathias’s dotfiles
+# Guido’s dotfiles fork
 
 ## Installation
 
@@ -7,7 +7,7 @@
 You can clone the repository wherever you want. (I like to keep it in `~/Projects/dotfiles`, with `~/dotfiles` as a symlink.) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 ```bash
-git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/guido4000/dotfiles.git && cd dotfiles && source bootstrap.sh
 ```
 
 To update, `cd` into your local `dotfiles` repository and then:
@@ -76,6 +76,14 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ```bash
 ./.brew
 ```
+
+## Some differences
+
+* Browserstack shortcuts which will launch the service and automatically load up a specific OS/Browser pair with your URL. e.g `win7ie8 "http://google.com"`, `ipad3 "http://google.com"`, `ipad3ios6 "http://google.com"`,`androidnexus "http://google.com"` etc. If you would prefer to work locally similarly use `ipad3 "http://localhost:3000"`
+* Browser and npm aliases e.g `chrome`, `safari`, `opera`, `firefox`, `chromium` and others.
+* Launch all browsers with a specific URL `browsers "http://google.com"`
+* [@cowboy](http://github.com/cowboy)'s GitHub Pull Request Helper
+
 
 ## Feedback
 
