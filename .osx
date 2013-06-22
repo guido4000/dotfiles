@@ -330,6 +330,9 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 # Enable the 2D Dock
 #defaults write com.apple.dock no-glass -bool true
 
+# totalterminal closes normal window
+defaults write com.apple.Terminal TotalTerminalCloseWindowsOnStart -bool YES
+
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
