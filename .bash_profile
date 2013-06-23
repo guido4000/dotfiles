@@ -15,6 +15,12 @@ unset file
 # needed to fix z.sh code! GH
 . ~/code/z/z.sh
 
+# RBENV
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# eval "$(rbenv init -)"
+
+# mysql2 bundle config build.mysql2 --with-mysql-config=/usr/local/Cellar/mysql/5.6.12/bin/mysql_config
+export ARCHFLAGS="-arch x86_64"
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
@@ -47,5 +53,3 @@ which grunt &> /dev/null && eval "$(grunt --completion=bash)"
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
