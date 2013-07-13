@@ -1,6 +1,9 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH"
 
+# Add Android SDK
+export PATH=${PATH}:/Applications/android-sdk-macosx/platform-tools:/Applications/android-sdk-macosx/tools
+
 
 
 # Load the shell dotfiles, and then some:
