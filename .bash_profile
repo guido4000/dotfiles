@@ -4,7 +4,7 @@ export PATH="$HOME/bin:$PATH"
 # Add Android SDK
 export PATH=${PATH}:/Applications/android-sdk-macosx/platform-tools:/Applications/android-sdk-macosx/tools
 
-export PATH="/usr/local/sbin:$PATH"
+
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -16,7 +16,10 @@ unset file
 
 # init z   https://github.com/rupa/z
 # needed to fix z.sh code! GH
-. ~/code/z/z.sh
+# . ~/code/z/z.sh
+
+# installed with brew
+. /usr/local/Cellar/z/1.8/etc/profile.d/z.sh
 
 # RBENV
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
